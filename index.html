@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    
+<head lang="uk">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>My Cart</title>
+</head>
+    
+<body>
+<div class="container">
+    <div class="board-main">
+        <div class="board1">
+        <div class="board-search">
+            <div class="block-search">
+        <input class ="searchbar" type="text" placeholder="Product Name" value ="">
+            <p class="tool" data-tooltip="Add an item">    
+        <button class="button-search">ADD</button>
+                </p>
+                 </div>
+            </div>
+            <div class="list-of-items">
+                <div class="hidden">
+        <div class="board-item">
+            <div class="name">
+                <input	id="edit-name"	value="New Text"/>
+                <span class="text-product">product</span>
+                </div>
+            <div class="buttons-number">
+                <p class="tool" data-tooltip="Remove 1 item">
+                <button class="button-minus">-</button>
+                    </p>
+                 <span class="label-amount">1</span>
+                    <p class="tool" data-tooltip="Add 1 item">
+                <button class="button-plus">+</button>
+                        </p>
+            </div>
+            <div class="buttons-product">
+                <p class="tool" data-tooltip="Buy">
+                <button class="button-bought">Bought</button>
+                </p>
+                <p class="tool" data-tooltip="Delete">
+                <button class="button-delete">
+                <span class="text-white">x</span>
+                </button>
+                </p>
+                <button class="button-cancel">CANCEL</button>
+            </div>
+        </div>
+        
+            </div>
+            </div>
+    </div>
+        <div class="board2">
+        <div class="block">
+        <span class="text">Left</span>
+        <div class="products-left">
+            <div class="hidden2">
+            <div class="panel-amount">
+                <span class="text-amount">product</span>
+                <div class="icon-amount">
+                    <span class="number-amount">1</span>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        <div class="block">
+        <span class="text">Bought</span>
+        <div class="products-bought"> </div>
+        </div>
+    </div>
+        <div class="badge">
+            <span class="text-badge"> Buy List </span>
+            <div class="hidden">Text</div>
+                <div class="badge-block">
+            <span> Created By: </span>
+            <span> Illya Morhachov </span>
+                </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script	type="text/javascript" src="javamain.js">	</script> 
+</body>
+    
+</html>

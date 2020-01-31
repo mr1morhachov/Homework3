@@ -1,0 +1,349 @@
+body {
+    background-color: #DCDCDC;
+}
+
+/*Container*/
+.container {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}
+
+/*Boards*/
+.board-main {
+    width: 100%;
+    font-family: "Arial";
+    font-size:17px;
+    display: flex;
+    flex-direction:row;  
+}
+
+.board1 {
+    border-radius: 8px;
+    background: #F0FFF0;
+    height: auto;
+    width: 69%;
+    min-width: 336px;
+    margin: 12px;
+    float: left;
+    display: inline-block;
+}
+
+.board2 {
+    border-radius: 8px;
+    background: #F0FFF0;
+    width: 25%;
+    height: auto;
+    min-width: 115px;
+    min-height: 180px;
+    margin: 12px;
+    display: inline-block;
+}
+
+.board-search {
+    margin: 5px;
+    padding: 7px;
+}
+
+.board-item {
+    padding: 7px;
+    border-top: 1px solid #DCDCDC;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-height: 32px;
+}
+
+.board-block {
+    min-height: 49%;
+}
+
+/*Block of buttons*/
+.buttons-number {
+    min-width: 70px;
+    max-width: 110px;
+	margin: auto;
+    justify-content: space-between;
+}
+
+.buttons-product {
+    width: 14%;
+	min-width: 95px;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*Textbox*/
+.textbox-search {
+    width:auto;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+
+/*Product names*/
+.name {
+    width: 14%;
+    padding: 6px;
+}
+
+.text-product {
+    display:unset;
+}
+
+#edit-name {
+    display:none;
+}
+
+/*Label with amount of products*/
+.label-amount {
+    background: white;
+    padding: 2px;
+    border: 1px solid grey;
+}
+
+/*Text formats*/
+.text-search {
+    width:30%;
+}
+
+.text-white {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-badge {
+    font-size: 1.3rem;
+}
+
+.text {
+    padding: 15px;
+    font-size: 1.7rem;
+    font-family: "Arial";
+}
+
+/*Buttons*/
+.button-minus {
+    width: 22px;
+    height: 22px;
+    background: #CD5C5C;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.button-search {
+    background: #87CEFA;
+    color: white;
+    cursor: pointer;
+    height: 27px;
+	border: 0px solid #87CEFA;
+}
+
+.button-plus {
+    width: 22px;
+    height: 22px;
+    background: #98FB98;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-bought {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-delete {
+    background: #CD5C5C	;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 850;
+}
+
+.button-cancel {
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+/*Products left board*/
+.products-left {
+    display: block;
+    border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+    background: white;
+    min-height: 70%;
+}
+
+/*Products bought board*/
+.products-bought {
+    display: block;
+    border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+    background: white;
+    min-height: 70%;
+}
+
+/*Panel of product*/
+.panel-amount {
+    display: inline-block;
+    align-items: stretch;
+    background: #DCDCDC;
+    min-width: 50px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin: 2px;
+    text-align: center;
+    padding: 3px;
+}
+
+/*Icon of an amount*/
+.icon-amount {
+    border-radius: 7px;
+    background:orange;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+/*Number of an amount in a right menu*/
+.number-amount {
+    color: aliceblue;
+    font-weight: 150;
+}
+
+/*Block with items which are specialized for adding items*/
+.block-search {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    padding: 2px;
+    font-size: 20px;
+}
+
+/*Searchbar*/
+.searchbar {
+	flex: 1 0 auto;
+}
+
+/*Badge*/
+.badge {
+    position: fixed;
+    bottom:	0px;
+    left:	40px;
+    height:	35px;
+    width:	150px;
+    background-color: #9400D3;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    transition:	all	1s	ease;
+}
+
+.badge-block {
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Badge after targeting*/
+.badge:hover {
+    background:	#483D8B;
+    height:	80px;
+}
+
+/*Hidden blocks*/
+.hidden {
+    height: 10px;
+    background:	red;
+    visibility:	hidden;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.tool {
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*Tooltip*/
+[data-tooltip] {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+   }
+   
+[data-tooltip]::after {
+    opacity: 0;
+    font-weight: 100;
+    text-align: center;
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 3;
+    left: 0; top: 0;
+    background: #9400D3;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: 0.7s;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+   } 
+   
+/*Tooltip after targeting*/
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: -38px;
+    font-size: 14px;
+    width: 100px;
+    height: auto;
+   }
+
+/*Optimization of items on a monitor after maxi width 500px*/
+@media	(max-width:	500px)	{
+    .board-main {
+        flex-wrap: wrap; 
+    }
+    .board1 {
+        width: 100%;
+        min-width: 336px;
+    }
+    .board2 {
+        width: 100%;
+        min-width: 336px;
+    }
+}
+    
+/*Printing options*/
+@media print  {
+    .badge {
+        background-color: white;
+        color: black;
+        border: 1px solid #9400D3;
+        height: 45px;
+    }
+    .text-badge {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+}
